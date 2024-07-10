@@ -1,0 +1,5 @@
+{
+    "openai_api_key": "xxx",
+    "password_ttl_seconds": 7200,
+    "password_hash": "xxx"
+}
