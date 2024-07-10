@@ -1,4 +1,6 @@
 ### `run gpt chat with text and pictures using streamlit and openai`
+[![demo](demo.gif)](demo)
+
 ## Getting started:
 1. Install packages.
 ```bash
