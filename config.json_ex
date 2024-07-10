@@ -1,7 +1,8 @@
 {
     "openai_api_key": "xxx",
+    "enable_auth": false,
     "password_ttl_seconds": 7200,
     "password_hash": "xxx",
-    "port": 8502,
+    "port": 8501,
     "prefix": ""
 }

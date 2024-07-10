@@ -7,6 +7,7 @@ from app.src.gpt.message import Message, user_message, image_message
 from app.src.gpt.image import Image
 from app.src.streamlit.utils import hide_menu, get_or_create_eventloop
 from app.src.streamlit.auth import check_password
+from app.src.internal import env
 
 SYSTEM_PROMPT = r"""\
 Ouput markdown as for jupyter notebook. Single dollar "$" for inline math. Double "$$" for block math.
@@ -49,7 +50,7 @@ def redraw(my_bar, loop: asyncio.AbstractEventLoop):
 
 def application_run():
     hide_menu()
-    if not check_password():
+    if env.ENABLE_AUTH() and not check_password():
         st.stop()
     loop = get_or_create_eventloop()
     my_bar = st.progress(0)
