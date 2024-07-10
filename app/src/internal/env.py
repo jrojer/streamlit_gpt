@@ -14,3 +14,9 @@ def PASSWORD_TTL_SECONDS():
 
 def PASSWORD_HASH():
     return _config["password_hash"]
+
+def PORT():
+    return _config["port"]
+
+def PREFIX():
+    return _config["prefix"]
